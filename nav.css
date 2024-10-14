@@ -1,0 +1,130 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+nav{
+    height: 80px;
+    padding: 0 200px;
+    box-shadow: 0px 0px 10px rgb(179, 179, 179);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand_img{
+    height: 50px;
+}
+
+.brand_img:hover{
+    transform: scale(1.2);
+    transition: linear 0.5s;
+}
+
+.icons{
+    height: 30px;
+}
+
+#location{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: lighter;
+    background: inherit;
+    padding: 2px 0;
+}
+.options{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-left: 30px;
+}
+
+.center-v{
+    display: flex;
+    align-items: center;
+}
+
+.center-h{
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search, .location_container{
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+
+    font-weight: lighter;
+}
+.search{    background: rgb(243, 243, 243);   }
+.search input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: lighter;
+    background: inherit;
+    width: 250px;
+}
+
+.search i{
+    font-size: 20px;
+}
+
+.option_label{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 8px;
+}
+.big-hidden{
+    display: none;
+}
+.drop_down{
+    position: relative;
+}
+.drop_options{
+    width: 250px;
+    background: rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    row-gap: 10px;
+    z-index: 1000;
+
+}
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 0px 10px;
+    }
+    .options{
+        display: none;
+    }
+    .big-hidden{
+        display: block;
+    }
+    .drop_down:hover .drop_options{
+        display: flex;
+    }
+    .container{
+        padding: 0;
+    }
+}
